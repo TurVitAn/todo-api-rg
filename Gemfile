@@ -3,10 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
 
+gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'jwt_sessions', '~> 2.6'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 6.1.4'
+gem 'redis', '~> 4.3', '>= 4.3.1'
 
 group :development, :test do
   gem 'bullet', '~> 6.1', '>= 6.1.4'
