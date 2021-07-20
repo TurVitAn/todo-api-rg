@@ -21,3 +21,14 @@ Style/Documentation:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+RSpec/NestedGroups:
+  Exclude:
+    - 'spec/**/*'
+
+RSpec/MultipleExpectations:
+  Max: 5

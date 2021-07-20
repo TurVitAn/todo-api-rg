@@ -2,3 +2,7 @@ en:
   controllers:
     application:
       not_authorized: 'Not authorized'
+  validation:
+    user:
+      email: 'Email is already used'
+      password_confirmation: 'Does not match to password'
