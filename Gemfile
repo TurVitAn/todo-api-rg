@@ -9,6 +9,7 @@ gem 'puma', '~> 5.0'
 gem 'rails', '~> 6.1.4'
 
 group :development, :test do
+  gem 'bullet', '~> 6.1', '>= 6.1.4'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.2'
   gem 'ffaker', '~> 2.18'
@@ -22,7 +23,11 @@ group :development, :test do
 end
 
 group :development do
+  gem 'brakeman', '~> 5.0', '>= 5.0.4'
+  gem 'bundler-audit', '~> 0.8.0'
+  gem 'fasterer', '~> 0.9.0', require: false
   gem 'listen', '~> 3.3'
+  gem 'overcommit', '~> 0.58.0', require: false
   gem 'spring', '2.1.1'
 end
 
