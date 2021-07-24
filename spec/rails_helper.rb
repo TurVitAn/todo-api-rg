@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'dox'
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 abort('The Rails environment is running in production mode!') if Rails.env.production?
@@ -7,6 +8,13 @@ require 'simplecov'
 SimpleCov.start
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |file| require file }
+Dir[Rails.root.join('spec/docs/**/*.rb')].each { |file| require file }
+
+Dox.configure do |config|
+  config.header_file_path = Rails.root.join('spec/docs/v1/descriptions/header.md')
+  config.desc_folder_path = Rails.root.join('spec/docs/v1/descriptions')
+  config.headers_whitelist = %w[Accept X-Auth-Token]
+end
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
@@ -20,4 +28,9 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
   config.include ControllerMacros::InstanceMethods, bullet: true
+
+  config.after(:each, :dox) do |example|
+    example.metadata[:request] = request
+    example.metadata[:response] = response
+  end
 end
