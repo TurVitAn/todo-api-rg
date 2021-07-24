@@ -1,0 +1,94 @@
+version: 2.1
+
+executors:
+  default:
+    working_directory: ~/repo
+    description: The official CircleCI Ruby Docker image
+    docker:
+      - image: cimg/ruby:3.0.0-node
+        environment:
+          RAILS_ENV: test
+          PGHOST: localhost
+          PGUSER: postgres
+      - image: circleci/postgres:9.6.9
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_DB: todo_api_rg_test
+caches:
+  - &bundle_cache_full v2-repo-{{ checksum "Gemfile.lock" }}
+  - &bundle_cache v2-repo-
+commands:
+  defaults:
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - *bundle_cache_full
+            - *bundle_cache
+      - run: bundle install --path vendor/bundle
+      - run: mv config/database.circleci config/database.yml
+      - run:
+          name: Database Setup
+          command: |
+            bundle exec rails db:schema:load --trace
+            bundle exec rails db:migrate
+      - save_cache:
+          key: *bundle_cache_full
+          paths:
+            - vendor/bundle
+  run_rubocop:
+    description: command to start rubocop
+    steps:
+      - run:
+          name: rubocop
+          command: bundle exec rubocop
+  run_fasterer:
+    description: command to start fasterer
+    steps:
+      - run:
+          name: fasterer
+          command: bundle exec fasterer
+  run_bundler-audit:
+    description: command to start bundler-audit
+    steps:
+      - run:
+          name: bundler-audit
+          command: bundle exec bundler-audit
+  run_specs:
+    steps:
+      - run:
+          name: run specs
+          command: |
+            bundle exec rspec --format progress \
+                              --format RspecJunitFormatter \
+                              --out /tmp/test-results/rspec/rspec.xml
+          when: always
+      - store_test_results:
+          path: /tmp/test-results/rspec/
+jobs:
+  code_check:
+    executor: default
+    steps:
+      - defaults
+      - run_bundler-audit
+  code_style:
+    executor: default
+    steps:
+      - defaults
+      - run_rubocop
+  specs:
+    executor: default
+    steps:
+      - defaults
+      - run_specs
+workflows:
+  version: 2.1
+  build:
+    jobs:
+      - code_check
+      - code_style:
+          requires:
+            - code_check
+      - specs:
+          requires:
+            - code_style
