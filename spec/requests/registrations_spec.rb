@@ -1,8 +1,8 @@
 RSpec.describe 'Registrations', type: :request do
-  include Docs::V1::Descriptions::Registrations::Api
+  include Docs::V1::Registrations::Api
 
   describe 'POST /auth' do
-    include Docs::V1::Descriptions::Registrations::Create
+    include Docs::V1::Registrations::Create
 
     context 'when success' do
       let(:object) { post v1_auth_path, params: params, as: :json }
