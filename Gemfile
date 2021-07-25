@@ -5,6 +5,7 @@ ruby '3.0.0'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'jsonapi-serializer', '~> 2.2'
 gem 'jwt_sessions', '~> 2.6'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
