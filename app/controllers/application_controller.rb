@@ -1,7 +1,10 @@
 class ApplicationController < ActionController::API
   include JWTSessions::RailsAuthorization
+  include Pundit
+
   rescue_from JWTSessions::Errors::Unauthorized, with: :not_authorized
   rescue_from ActiveRecord::RecordNotFound, with: :not_found_error
+  rescue_from Pundit::NotAuthorizedError, with: :forbidden_content
 
   private
 
@@ -11,6 +14,10 @@ class ApplicationController < ActionController::API
 
   def not_found_error
     render json: { error: I18n.t('controllers.application.not_found') }, status: :not_found
+  end
+
+  def forbidden_content
+    render json: { error: I18n.t('controllers.application.forbidden_content') }, status: :forbidden
   end
 
   def current_user

@@ -17,6 +17,7 @@ module V1
     end
 
     def update
+      authorize current_project
       project_form = ProjectForm.new(project_params.merge(id: current_project.id))
       if project_form.update
         render json: ProjectSerializer.new(current_project).serializable_hash
@@ -26,6 +27,7 @@ module V1
     end
 
     def destroy
+      authorize current_project
       current_project.destroy
       head :no_content
     end
@@ -37,7 +39,7 @@ module V1
     end
 
     def projects
-      @projects ||= Project.all
+      @projects ||= policy_scope(Project)
     end
   end
 end

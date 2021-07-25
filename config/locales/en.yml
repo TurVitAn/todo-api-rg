@@ -3,6 +3,7 @@ en:
     application:
       not_authorized: 'Not authorized'
       not_found: 'Not found'
+      forbidden_content: 'Forbidden_content'
   validation:
     user:
       email: 'Email is already used'

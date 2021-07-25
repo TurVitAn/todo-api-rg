@@ -9,6 +9,7 @@ gem 'jsonapi-serializer', '~> 2.2'
 gem 'jwt_sessions', '~> 2.6'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
+gem 'pundit', '~> 2.1'
 gem 'rails', '~> 6.1.4'
 gem 'redis', '~> 4.3', '>= 4.3.1'
 
