@@ -33,6 +33,9 @@ RSpec/NestedGroups:
 RSpec/MultipleExpectations:
   Max: 5
 
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
+
 Naming/InclusiveLanguage:
   Exclude:
     - 'spec/rails_helper.rb'

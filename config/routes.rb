@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :projects do
       resources :tasks, shallow: true do
         resources :statuses, only: :update
+        resources :positions, only: :update
       end
     end
   end

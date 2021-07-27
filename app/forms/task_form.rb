@@ -1,7 +1,7 @@
 class TaskForm
   include ActiveModel::Model
 
-  attr_accessor :id, :project_id, :name, :status, :deadline
+  attr_accessor :id, :project_id, :name, :status, :deadline, :position
 
   validates :name, presence: true
 
