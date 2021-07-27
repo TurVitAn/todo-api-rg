@@ -1,5 +1,9 @@
 RSpec.describe 'Positions', type: :request do
+  include Docs::V1::Positions::Api
+
   describe 'PUT #update' do
+    include Docs::V1::Positions::Update
+
     let(:user) { create(:user) }
     let(:project) { create(:project, user_id: user.id) }
     let!(:task1) { create(:task, project_id: project.id, position: 1) }
@@ -12,7 +16,7 @@ RSpec.describe 'Positions', type: :request do
 
       let(:request_prior) { put v1_position_path(task2), params: params, headers: headers, as: :json }
 
-      it 'task position up' do
+      it 'task position up', :dox do
         expect { request_prior }.to change { Task.find_by(id: task1.id).position }
           .from(1).to(2).and change { Task.find_by(id: task2.id).position }.from(2).to(1)
         expect(response).to have_http_status :ok
@@ -24,7 +28,7 @@ RSpec.describe 'Positions', type: :request do
 
       let(:request_prior) { put v1_position_path(task2), params: params, headers: headers, as: :json }
 
-      it 'task position down' do
+      it 'task position down', :dox do
         expect { request_prior }.to change { Task.find_by(id: task2.id).position }
           .from(2).to(3).and change { Task.find_by(id: task3.id).position }.from(3).to(2)
         expect(response).to have_http_status :ok
@@ -37,7 +41,7 @@ RSpec.describe 'Positions', type: :request do
 
       before { put v1_position_path(fail_task_id), params: params, headers: headers, as: :json }
 
-      it 'return 404' do
+      it 'return 404', :dox do
         expect(response).to have_http_status :not_found
       end
     end
@@ -47,7 +51,7 @@ RSpec.describe 'Positions', type: :request do
 
       before { put v1_position_path(task2), params: params, headers: headers, as: :json }
 
-      it 'return 422' do
+      it 'return 422', :dox do
         expect(response).to have_http_status :unprocessable_entity
       end
     end
