@@ -13,6 +13,7 @@ module V1
     end
 
     def destroy
+      authorize current_comment
       current_comment.destroy
       head :no_content
     end
