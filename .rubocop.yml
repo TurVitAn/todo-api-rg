@@ -12,6 +12,7 @@ AllCops:
     - 'vendor/**/*'
     - 'config/environments/*'
     - 'config/puma.rb'
+    - 'db/migrate/*'
 
 Layout/LineLength:
   Max: 120
