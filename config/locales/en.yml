@@ -8,3 +8,6 @@ en:
     user:
       email: 'Email is already used'
       password_confirmation: 'Does not match to password'
+  services:
+    position_task:
+      wrong_position: 'Wrong position'

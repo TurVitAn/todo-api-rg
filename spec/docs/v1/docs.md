@@ -15,14 +15,14 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIzNCwidWlkIjoiNzA2MGQyODktZDY0OC00ZjhkLTg5YTItYjhjNjI5ZmQyYTgxIiwicnVpZCI6IjFhNjVkZjNkLTRjOTItNGE4MS1hYTRjLTdhMzYyODRlYTlkMCJ9.NC69clHbLtMUEALUnftQGTv9b23rB8m7wW93t9ZUUNU
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjg3LCJ1aWQiOiIyZGQ4NjE0NC1lNGE0LTQxMmUtYTgwYy1lYmNmOGE3ZWIwMGMiLCJydWlkIjoiOGNlNTg5NjUtNmJhNC00MzMwLWEzNWEtY2JjYzM5MjYyMWU0In0.fw_PAWh3Ib7Vi1b7JFHT3NLcd_R1YZWmRurKPP1mT-w
             Content-Type: application/json
 
     + Body
 
             {
-              "email": "joel@carrollbaumbach.biz",
-              "password": "RmBJ62pHDBR"
+              "email": "phoebe@binsroob.biz",
+              "password": "ECf4eFdpKX0Qa"
             }
 
 + Response 200
@@ -34,7 +34,7 @@
     + Body
 
             {
-              "csrf": "UrrG0300RPV+Krgc0g8NwyVFqzkbcLmYMgDq/+XbYzKdMv3HfcMtc/0PjeCV79Cw4RsIsUoai0FefTr7kP0gCw=="
+              "csrf": "u5B6IXZ2b6KCkmp/nZAYeEeJu8Eppb46xVceC70yN/rDzpwZZpcAY6hzypmbFbpjtYI7hVNhTdPp47pUnpy/jw=="
             }
 
 ### Destroy a session [DELETE /v1/auth/sign_out]
@@ -46,7 +46,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIzNSwidWlkIjoiNzUyZjc5ZGYtYTE2ZS00ZGE5LWFmYWUtMTYwYTczZmFlY2RhIiwicnVpZCI6IjFjNmQzMWIxLWQ2M2ItNGVhNC1hODgzLTRhMzhkZDgxZjY3ZCJ9.IL4ExJmlhgZe-QIIndy1WBlFa34psvyC_LR-YuxlbJM
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjg4LCJ1aWQiOiJiYzE2Njk3Yi0xMmUxLTRiYTctOTU3Ni01MDE2ODExM2YxZTciLCJydWlkIjoiMjcwNmU2NDctMWY5NS00NmVlLWE2NzQtN2VlYTQ3MTIwNmNiIn0.bytkgrBiJV3Jm3lzFURqE5C_Wsi5dQV86ERYa4dCyPo
             Content-Type: application/json
 
 + Response 200
@@ -74,7 +74,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIyNSwidWlkIjoiZWRhYWMyYTUtYzQxNS00YjgwLTk5MzYtN2JhOTI2YjIzNzcyIiwicnVpZCI6ImUyMjJkNTgxLTVjZDMtNDQ2My04OWIzLWNjZjcyYmUwZjhiNSJ9.ozIavnG0il7bpPJjwF85OTSSOaOVNeVQ5QTE-vMOsEg
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjc4LCJ1aWQiOiI2OTk4YjczNC0wMDFjLTQxOTgtODJmNy0wMTdiZWM1M2Q5Y2MiLCJydWlkIjoiN2JhZjUzZGMtY2VkOC00Mjg3LWE4NDktM2EzNmQ3ZmIyYzlhIn0.Mw3bawT7N2klWhcHSfewl9jvM2TDKYRi7PM4FaRC55s
             Content-Type: application/json
 
 + Response 200
@@ -120,13 +120,13 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIyNiwidWlkIjoiOTdlZDYyN2UtMjU2Mi00ZDc5LTg3YTQtODZmNzkzODYxZmMwIiwicnVpZCI6IjU4YjFkNzgxLTI4NjctNGQ5NS04MjRlLTBkZWY0YTI1ZTc4MSJ9.ylc22RBK6wazZorTdnw6B4jymXubWSeclwuKQ95LUeY
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjc5LCJ1aWQiOiJkYTc1YTczZS00YzgwLTRjYWUtOTg0YS0wNmFjMTc3MzZkYTEiLCJydWlkIjoiZTFjNjZmOTYtNGQ2My00ZGMyLTk2YWQtNDAyOGVjMmJlZDNkIn0.1phOs9t4zhdgjSRIJEZtvFbXyko-29pUCQdQEmk5bpI
             Content-Type: application/json
 
     + Body
 
             {
-              "name": "tempora"
+              "name": "sed"
             }
 
 + Response 201
@@ -139,17 +139,22 @@
 
             {
               "data": {
-                "id": "88",
+                "id": "52",
                 "type": "project",
                 "attributes": {
-                  "name": "tempora"
+                  "name": "sed"
                 },
                 "relationships": {
                   "user": {
                     "data": {
-                      "id": "226",
+                      "id": "79",
                       "type": "user"
                     }
+                  },
+                  "tasks": {
+                    "data": [
+            
+                    ]
                   }
                 }
               }
@@ -161,7 +166,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIyNywidWlkIjoiZTM3OTFjNDQtZThmNS00Yjc1LWFkZGUtNTNhNDNjMDkxMGRlIiwicnVpZCI6IjRjMzk4MjBjLTNmZjQtNDVkNi1hYWZjLTZmZTVjNWYwNGQ1MCJ9.zwQEMYJZBxqEeA5G3FByqkVyZsyod_UUzX_wzXos-uk
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjgwLCJ1aWQiOiJiOWRkN2VkMi1lNDFlLTQ2ZDEtYTAyNS1lMzFiYzZkYzdlYTciLCJydWlkIjoiZmZiNjEyNzctMzE1OC00MTdjLThhODQtMWUzNzg3NGZhMzgyIn0.cgPKHqdnd7cU_jOdAgBWpIt74f-ECTCF4g121djqdXE
             Content-Type: application/json
 
     + Body
@@ -194,21 +199,21 @@
 ### Update a project [PUT /v1/projects/{id}]
 
 + Parameters
-    + id: `89` (number, required)
+    + id: `53` (number, required)
 
 + Request update project
-**PUT**&nbsp;&nbsp;`/v1/projects/89`
+**PUT**&nbsp;&nbsp;`/v1/projects/53`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIyOCwidWlkIjoiZjE5MjkwODctOTJkNC00ZWJhLWFjODMtZDBjMDY3MThmYTJkIiwicnVpZCI6ImQ0YzVjZTE2LTk1OTktNDkyMC04Njk2LTgzMTI5ODRkZmM1OCJ9.E8IwOJAjAS4ozQFJg3eX5WqVYKWlm6uyRUVjoKoyxbU
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjgxLCJ1aWQiOiI3MzA1NDA0Ny03NWU3LTQ4NzAtOGE1OS02NjczMzQ4ODQwYTEiLCJydWlkIjoiZjQ1M2VlMTktMzc0OS00ZWRmLWFkZDgtZTkzNGE1MDNjMjVkIn0.1QKAptkRpYI89eC0CMV-4LmxnUCxsGO0D9o8ymEV-9U
             Content-Type: application/json
 
     + Body
 
             {
-              "name": "placeat"
+              "name": "consequuntur"
             }
 
 + Response 200
@@ -221,29 +226,34 @@
 
             {
               "data": {
-                "id": "89",
+                "id": "53",
                 "type": "project",
                 "attributes": {
-                  "name": "beatae"
+                  "name": "nulla"
                 },
                 "relationships": {
                   "user": {
                     "data": {
-                      "id": "228",
+                      "id": "81",
                       "type": "user"
                     }
+                  },
+                  "tasks": {
+                    "data": [
+            
+                    ]
                   }
                 }
               }
             }
 
 + Request not update project 422
-**PUT**&nbsp;&nbsp;`/v1/projects/90`
+**PUT**&nbsp;&nbsp;`/v1/projects/54`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIyOSwidWlkIjoiYzM5ODRjNDktOTg5My00YjE4LWIyMGQtMTc3YjI3ZjczZjRlIiwicnVpZCI6IjI0N2JjY2U1LWFiZTQtNDEwMi1iMDBkLTMyNzliODNkMzQ3NSJ9.itpRWAKaKHEovoFW7Di6P4_w5sVG5YUFgm95cFy80_w
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjgyLCJ1aWQiOiI2ZThjOTM4MS1hY2I0LTQ0NzItODZkOS05ZmE1N2ZmY2NhMTMiLCJydWlkIjoiNWE3Y2FlMWYtYzYxNy00OGM5LTg1ZTQtYjVlOWU0YjdlOTljIn0.28UOtkEVyDR_vbRoYbW8R6HTLikS5v_zH7MXdBPf7PQ
             Content-Type: application/json
 
     + Body
@@ -279,13 +289,13 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIzMCwidWlkIjoiM2RjYmY2YTEtNWU3Ny00MTE4LTlmYjEtOGQ1MWQyY2VmNzA1IiwicnVpZCI6IjEzOTQ1YWRlLWY5ODEtNDUwYy1hYWIwLWE0ZTk0NjFkNzAzZSJ9.K8In0bgXmwGihzTDqLY_hGmQEXIUd9JxtgyYQvp2QUg
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjgzLCJ1aWQiOiJhYzUzOGI5Yi0zZGNlLTRlNzktYmJjYy04NGMwODdhZWMzNGUiLCJydWlkIjoiNzYxMzQ3ZTYtYWUxNS00ZTI3LWE2ZDEtMWIxMWJiMWEzNTgzIn0.APomeibrRQW4iiQdCDE5CMrxnkM-1YkcjURNHpeQtL4
             Content-Type: application/json
 
     + Body
 
             {
-              "name": "eveniet"
+              "name": "sapiente"
             }
 
 + Response 404
@@ -303,15 +313,15 @@
 ### Destroy a project [DELETE /v1/projects/{id}]
 
 + Parameters
-    + id: `91` (number, required)
+    + id: `55` (number, required)
 
 + Request delete project
-**DELETE**&nbsp;&nbsp;`/v1/projects/91`
+**DELETE**&nbsp;&nbsp;`/v1/projects/55`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIzMSwidWlkIjoiNDJiODI3ZDAtOWJiZi00MDA4LTk1NTUtZjM1MzFkOTEwZTVkIiwicnVpZCI6ImQ4YzA1NDkxLTcyNTUtNGZhNi1iYWRhLWFhZDIyMTIzNmQxMiJ9.qobT55lrXMZXzwIeRbmYBhg-ahWtZHSI50TZ__P6BBA
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjg0LCJ1aWQiOiJkOGQyYjk4Yi1hMzdlLTRiNDItOTE0Yy1kMjkyZGJkNjg4ODUiLCJydWlkIjoiN2E5ZGUwZTUtZWRlZi00NzBmLThmYmQtYTJjZGE1NzcyYTE1In0.PQ6vuFG-oSQP7njmJrOr7EYi_D8rHWnQoyKJdYeF10Q
             Content-Type: application/json
 
 + Response 204
@@ -322,7 +332,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczNzQ5MjAsInVzZXJfaWQiOjIzMiwidWlkIjoiOWFjOGUyNWQtMGVlMi00YTkzLWFjZjUtOWQwYTNmYzM4YTI3IiwicnVpZCI6ImZmZjYxMzg2LTZkMGYtNDJhNC1iMjQxLWIxZTUwMTNhNmVkNCJ9.xEmhQUylvXpuRFD6Qs1kgyn5m76oUdfoqpVHbkHBvjE
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjg1LCJ1aWQiOiJhOTExZWYzYi02YjI1LTRhN2QtOGQ0Yy1kYjVjYjA1MTgzNzUiLCJydWlkIjoiZTQ0YTE1ZjAtNjc5Mi00Yzc3LWIwZjEtNWE2MGU3NzE5MmYyIn0.9fcWpalIo9OnQ-v6Ey_QQBlECQ37TwNFr4Z7WE_KWck
             Content-Type: application/json
 
 + Response 404
@@ -357,9 +367,9 @@
     + Body
 
             {
-              "email": "carolyn_lehner@pfannerstill.info",
-              "password": "4ddqeHPIolqSPX",
-              "password_confirmation": "4ddqeHPIolqSPX"
+              "email": "eartha@hilpert.us",
+              "password": "QRf4o7du",
+              "password_confirmation": "QRf4o7du"
             }
 
 + Response 201
@@ -371,5 +381,532 @@
     + Body
 
             {
-              "csrf": "g6SACRKEHbmo4PM0tx2sPj96WjzJYF5tBZCqNVtQ70yjXi7ZWRr9km2YTWSEtU6UjryTi52pW/zvYRtMR+jwCA=="
+              "csrf": "qKeQfzZy9WY52eQmCNcwiWqaGxw46Uc1qVkAGMV+ZenCIKwuqzhVaUjxlUsvkRtA71aNJK5w0yRxJqh4WzHUDg=="
+            }
+
+# Group Tasks
+
+
+## Position [/positions]
+
+
+### Update task position [PUT /v1/positions/{id}]
+
++ Parameters
+    + id: `65` (number, required)
+
++ Request task position up
+**PUT**&nbsp;&nbsp;`/v1/positions/65`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjc0LCJ1aWQiOiJhZGM0Y2FkOS0wZmY4LTQ2YjgtODNiZC0zZTA1MTY3Njg2ZDIiLCJydWlkIjoiNjZjZmM1OTgtY2ZkOC00ZTI4LThlNzctYTI4N2UxYTUyYjdhIn0.__mtLbE4PurHsx6I3x3fxrMSIph619SrQa5dJPW5f70
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "position": "up"
+            }
+
++ Response 200
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "data": {
+                "id": "65",
+                "type": "task",
+                "attributes": {
+                  "name": "quis",
+                  "deadline": "2021-07-28T00:00:00.000Z",
+                  "status": false,
+                  "position": 1
+                },
+                "relationships": {
+                  "project": {
+                    "data": {
+                      "id": "48",
+                      "type": "project"
+                    }
+                  }
+                }
+              }
+            }
+
++ Request task position down
+**PUT**&nbsp;&nbsp;`/v1/positions/68`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjc1LCJ1aWQiOiIxNjhmM2JmZC00MzI3LTQ1YzEtYTE2OC02NzJlMmQ0MGFlODkiLCJydWlkIjoiZDYwYjI1MGUtNzFlZi00MTNkLTkxZTgtOTdjNTYwNzg0ZDVlIn0.zKycH2USujdxNksVkEMYp8XBEwp_QXCvRfVNDhJYHyc
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "position": "down"
+            }
+
++ Response 200
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "data": {
+                "id": "68",
+                "type": "task",
+                "attributes": {
+                  "name": "atque",
+                  "deadline": "2021-07-28T00:00:00.000Z",
+                  "status": false,
+                  "position": 3
+                },
+                "relationships": {
+                  "project": {
+                    "data": {
+                      "id": "49",
+                      "type": "project"
+                    }
+                  }
+                }
+              }
+            }
+
++ Request return 404
+**PUT**&nbsp;&nbsp;`/v1/positions/5`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjc2LCJ1aWQiOiIyZDgxNTE3ZC02YjhmLTQwZjQtYWIxZC1lZGVlNzc5MTE4NmYiLCJydWlkIjoiMzg0ZjNkZDctNWExYy00YmRlLWIxMWItMWEyOTBlMzQxMjFiIn0.X8vKUMz3pai-DaWqllirTGuKVsy-ydd7IniUo-fte5E
+            Content-Type: application/json
+
+    + Body
+
+            {
+            }
+
++ Response 404
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "error": "Not found"
+            }
+
++ Request return 422
+**PUT**&nbsp;&nbsp;`/v1/positions/74`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDcsInVzZXJfaWQiOjc3LCJ1aWQiOiIyMzIxYmE3NC0wYTZiLTRhOWUtYWM2Yy1kMmE4MmFlNDA1YTIiLCJydWlkIjoiNWE5OTU4NTQtYmNjNi00MzIzLWI5ZGItMTI2ZThjNDAxYWI0In0.QvRV6OeZI8PZ4uC4vY4Zy-D1KgXhIpbXC4UOC1NAHvI
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "position": "qui"
+            }
+
++ Response 422
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "errors": [
+                {
+                  "source": {
+                    "pointer": "/v1/positions/74"
+                  },
+                  "detail": "Wrong position"
+                }
+              ]
+            }
+
+## Status [/statuses]
+
+
+### Update task status [PATCH /v1/statuses/{id}]
+
++ Parameters
+    + id: `76` (number, required)
+
++ Request when do complete task
+**PATCH**&nbsp;&nbsp;`/v1/statuses/76`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjg5LCJ1aWQiOiJkMzQ3NjU2NS03MDUzLTRhMmQtOTk3MS02OWVmMmRiMzQ2ODkiLCJydWlkIjoiOGNkNmYyYzMtZGUyZC00MDk0LWJkMTItNmE4ODk0Y2QwOTcyIn0.x8YhdcrbPJGTLFbLAJBcz-QI57T3m-GznzX9EDQLabo
+            Content-Type: application/json
+
++ Response 200
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "data": {
+                "id": "76",
+                "type": "task",
+                "attributes": {
+                  "name": "reprehenderit",
+                  "deadline": "2021-07-28T00:00:00.000Z",
+                  "status": true,
+                  "position": 1
+                },
+                "relationships": {
+                  "project": {
+                    "data": {
+                      "id": "57",
+                      "type": "project"
+                    }
+                  }
+                }
+              }
+            }
+
++ Request when do not complete task
+**PATCH**&nbsp;&nbsp;`/v1/statuses/77`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjkwLCJ1aWQiOiI5MTRmNDAxNC1kODljLTRmZjUtOWRhOC02YzZkMjQzZDZlM2UiLCJydWlkIjoiN2I2YzYwNTctZTMyZC00MDdkLWJiZTctY2M4MTU3OGYxN2Y5In0.XfKjLqTABAqllzW0ZlvkQpy8T1dtKChBtFl3zQOX1Ns
+            Content-Type: application/json
+
++ Response 200
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "data": {
+                "id": "77",
+                "type": "task",
+                "attributes": {
+                  "name": "perferendis",
+                  "deadline": "2021-07-28T00:00:00.000Z",
+                  "status": false,
+                  "position": 1
+                },
+                "relationships": {
+                  "project": {
+                    "data": {
+                      "id": "58",
+                      "type": "project"
+                    }
+                  }
+                }
+              }
+            }
+
++ Request fail complete task
+**PATCH**&nbsp;&nbsp;`/v1/statuses/0`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjkxLCJ1aWQiOiIwNjM5NjcyMS0wMDY4LTQ1MDQtODk5MC0zY2QxMzBkNTRlNzEiLCJydWlkIjoiMzI3NTdkY2MtYjZiYi00ZjBjLWI1MzYtNzhiNDcyNzM4ODA2In0.utAqMgQIOMsWG7kmhltI49SBp6Q0bjk2p5ujPl40kMY
+            Content-Type: application/json
+
++ Response 404
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "error": "Not found"
+            }
+
+## Tasks [/tasks]
+
+
+### Create a task [POST /v1/projects/{project_id}/tasks]
+
++ Parameters
+    + project_id: `60` (number, required)
+
++ Request create task
+**POST**&nbsp;&nbsp;`/v1/projects/60/tasks?id=60`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjkzLCJ1aWQiOiIxZjMxMmQ5Ni00YmI1LTRjMzQtYjNjOC1lNzgzNGMyYWU0MTYiLCJydWlkIjoiMzZiNWM5N2EtYTQ1YS00MDc1LTk2YWMtYzJiZWFjNzI4ZmEwIn0.wkMCis_y58h2sPU8OeVhSUQcCSSuJeimQA2ew30ONg4
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "name": "voluptate",
+              "deadline": "2021-07-28T10:00:48.303Z"
+            }
+
++ Response 201
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "data": {
+                "id": "79",
+                "type": "task",
+                "attributes": {
+                  "name": "voluptate",
+                  "deadline": "2021-07-28T10:00:48.303Z",
+                  "status": false,
+                  "position": 1
+                },
+                "relationships": {
+                  "project": {
+                    "data": {
+                      "id": "60",
+                      "type": "project"
+                    }
+                  }
+                }
+              }
+            }
+
++ Request not create task
+**POST**&nbsp;&nbsp;`/v1/projects/0/tasks`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjk0LCJ1aWQiOiJjNWIyYjNmNi1kNGVlLTRhNTYtOWM0MS02MmFiNWE0OTFiMzUiLCJydWlkIjoiNWRmY2MwYmUtNDVlMi00NTQ5LWE5ZmEtOTMzODE2MjgxMWU3In0.9aGp4F0CxC4f181grceSyoEjlWosxqpM76LEKPXx_t8
+            Content-Type: application/json
+
+    + Body
+
+            {
+            }
+
++ Response 404
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "error": "Not found"
+            }
+
++ Request not create task
+**POST**&nbsp;&nbsp;`/v1/projects/61/tasks?id=61`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjk1LCJ1aWQiOiJkZGFlNDZkMi01NTAwLTRiZWEtOTYyNS04YTYzODU1YjY3MmMiLCJydWlkIjoiN2I1ZDQ4NDAtNTAxZC00MzRjLWE2MGEtNjA2NTQ2NjY4ZmI1In0.4Q5_dEAz4Re7RD06KC3z8iuxEoysD657Pg97MY6hTKY
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "name": ""
+            }
+
++ Response 422
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "errors": [
+                {
+                  "source": {
+                    "pointer": "data/attributes/name"
+                  },
+                  "detail": [
+                    "can't be blank"
+                  ]
+                }
+              ]
+            }
+
+### Update a task [PUT /v1/tasks/{id}]
+
++ Parameters
+    + id: `80` (number, required)
+
++ Request update task
+**PUT**&nbsp;&nbsp;`/v1/tasks/80`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjk2LCJ1aWQiOiI3MmM2OTQwOS05YzFjLTRlODItOTllMS04NjI2NDJjODJkNjQiLCJydWlkIjoiOTdhZjcyMDAtZDE3NS00Mzg3LTkxOTItMmZiOTY0NDI2MjFkIn0.-BciJZlXwfO0tSM-JWoYmTbZoLHU4uf5hFQYxJSiy0c
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "name": "animi"
+            }
+
++ Response 200
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "data": {
+                "id": "80",
+                "type": "task",
+                "attributes": {
+                  "name": "architecto",
+                  "deadline": "2021-07-28T00:00:00.000Z",
+                  "status": false,
+                  "position": 1
+                },
+                "relationships": {
+                  "project": {
+                    "data": {
+                      "id": "62",
+                      "type": "project"
+                    }
+                  }
+                }
+              }
+            }
+
++ Request not update task
+**PUT**&nbsp;&nbsp;`/v1/tasks/0`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjk3LCJ1aWQiOiIyMDg4MTIyZS05NzdlLTQyNjktYWQxYS01Yzg5ZTAyNWI0MWUiLCJydWlkIjoiZjJkNmNjNjUtNWU0Mi00MzJmLWExMGYtOWFhMGNmYTAxMjNlIn0.NNeuNfjcd865gMTsmTvJypww1yKGuahYk8USPqHp_ZU
+            Content-Type: application/json
+
+    + Body
+
+            {
+            }
+
++ Response 404
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "error": "Not found"
+            }
+
++ Request not update task
+**PUT**&nbsp;&nbsp;`/v1/tasks/82`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjk4LCJ1aWQiOiI1ODhkZDUxYS05YmQ4LTQ4ZTctOGViMy0zOTgyYzNjMjE3NDEiLCJydWlkIjoiMDRkNWRiYjEtM2JlYi00NWJmLTk2ZWYtMGUwMGY0NGMzOGM3In0.ZVNlgk1g7_22g8uZfvuNAYo3Don3QlM41s5PghUY0_U
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "name": ""
+            }
+
++ Response 422
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "errors": [
+                {
+                  "source": {
+                    "pointer": "data/attributes/name"
+                  },
+                  "detail": [
+                    "can't be blank"
+                  ]
+                }
+              ]
+            }
+
+### Destroy a task [DELETE /v1/tasks/{id}]
+
++ Parameters
+    + id: `83` (number, required)
+
++ Request success destroy task
+**DELETE**&nbsp;&nbsp;`/v1/tasks/83`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjk5LCJ1aWQiOiI0NDU3M2NiOC1mMDhjLTRiODUtOTY4My1jOGY1MTk2OTdmOWQiLCJydWlkIjoiY2U0M2IyNWItN2QyZS00NWQxLTllNjItMzQxZTYyMWViMWUyIn0.2L9Rfmtni8N34SzZQ-tp2uU8oX2SccAU9Vq4Oo9Gi4I
+            Content-Type: application/json
+
++ Response 204
+
++ Request failed destroy task
+**DELETE**&nbsp;&nbsp;`/v1/tasks/0`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjczODM2NDgsInVzZXJfaWQiOjEwMCwidWlkIjoiOGI0ZjJlMjAtM2Q4YS00YTJjLWIwMzItMTI2YjlhNjIyYjJlIiwicnVpZCI6IjdiZWFiYjRjLTY1MmYtNDZhZS1hZTRmLTJhZWJkM2JlM2JmZiJ9.ZrFU1QbQgdO5J3Ph_pgLEvv1zslbShIyEqNytXhece8
+            Content-Type: application/json
+
++ Response 404
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "error": "Not found"
             }
