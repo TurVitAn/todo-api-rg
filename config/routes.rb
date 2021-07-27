@@ -8,7 +8,9 @@ Rails.application.routes.draw do
       delete '/sign_out', controller: :sessions, action: :destroy
     end
     resources :projects do
-      resources :tasks
+      resources :tasks, shallow: true do
+        resources :statuses, only: :update
+      end
     end
   end
 end
