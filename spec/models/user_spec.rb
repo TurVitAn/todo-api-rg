@@ -4,5 +4,6 @@ RSpec.describe User, type: :model do
   context 'with associations' do
     it { is_expected.to have_many(:projects).dependent(:destroy) }
     it { is_expected.to have_many(:tasks).through(:projects) }
+    it { is_expected.to have_many(:comments).through(:tasks) }
   end
 end
