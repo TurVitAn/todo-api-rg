@@ -5,11 +5,11 @@ RSpec.describe 'Statuses', type: :request do
     include Docs::V1::Statuses::Update
 
     let(:user) { create(:user) }
-    let(:project) { create(:project, user_id: user.id) }
+    let(:project) { create(:project, user: user) }
     let(:headers) { authorization_header_for(user) }
 
     context 'when success complete' do
-      let!(:task) { create(:task, project_id: project.id) }
+      let!(:task) { create(:task, project: project) }
 
       let(:request_status) { patch v1_status_path(task), headers: headers, as: :json }
 
@@ -20,7 +20,7 @@ RSpec.describe 'Statuses', type: :request do
     end
 
     context 'when success not complete' do
-      let!(:task_complete) { create(:task, project_id: project.id, status: true) }
+      let!(:task_complete) { create(:task, project: project, status: true) }
 
       let(:request_status) { patch v1_status_path(task_complete), headers: headers, as: :json }
 
