@@ -13,6 +13,7 @@ module V1
     end
 
     def update
+      authorize current_task
       task_form = TaskForm.new(task_params.merge(id: params[:id]))
       if task_form.update
         render json: TaskSerializer.new(current_task).serializable_hash
@@ -22,6 +23,7 @@ module V1
     end
 
     def destroy
+      authorize current_task
       current_task.destroy
       head :no_content
     end
