@@ -5,7 +5,7 @@ RSpec.describe 'Positions', type: :request do
     include Docs::V1::Positions::Update
 
     let(:user) { create(:user) }
-    let(:project) { create(:project, user_id: user.id) }
+    let(:project) { create(:project, user: user) }
     let!(:task1) { create(:task, project_id: project.id, position: 1) }
     let!(:task2) { create(:task, project_id: project.id, position: 2) }
     let!(:task3) { create(:task, project_id: project.id, position: 3) }

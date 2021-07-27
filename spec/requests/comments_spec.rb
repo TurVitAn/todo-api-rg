@@ -2,16 +2,16 @@ RSpec.describe 'Comments', type: :request do
   include Docs::V1::Comments::Api
 
   let(:user) { create(:user) }
-  let(:project) { create(:project, user_id: user.id) }
-  let(:task) { create(:task, project_id: project.id) }
+  let(:project) { create(:project, user: user) }
+  let(:task) { create(:task, project: project) }
   let(:headers) { authorization_header_for(user) }
 
   describe 'POST #create' do
     include Docs::V1::Comments::Create
 
     context 'when success' do
-      let(:params) { { description: FFaker::Lorem.word } }
-
+      let(:params) { { description: FFaker::Lorem.word, image: image } }
+      let(:image) { Rack::Test::UploadedFile.new(Rails.root.join('spec/fixtures/images/default.jpg')) }
       let(:request_comment) { post v1_task_comments_path(task, id: task), headers: headers, params: params }
 
       it 'create comment', :dox do
@@ -35,7 +35,7 @@ RSpec.describe 'Comments', type: :request do
   describe 'DELETE #destroy' do
     include Docs::V1::Comments::Destroy
 
-    let!(:comment) { create(:comment, task_id: task.id) }
+    let!(:comment) { create(:comment, task: task) }
 
     context 'when success destroy comment' do
       let(:request_comment) { delete v1_comment_path(comment), headers: headers, as: :json }

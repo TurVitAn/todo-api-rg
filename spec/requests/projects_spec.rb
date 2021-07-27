@@ -59,7 +59,7 @@ RSpec.describe 'Projects', type: :request do
     include Docs::V1::Projects::Update
 
     let(:user) { create(:user) }
-    let(:project) { create(:project, user_id: user.id) }
+    let(:project) { create(:project, user: user) }
     let(:headers) { authorization_header_for(user) }
 
     context 'when success' do
@@ -99,7 +99,7 @@ RSpec.describe 'Projects', type: :request do
     include Docs::V1::Projects::Destroy
 
     let(:user) { create(:user) }
-    let(:project) { create(:project, user_id: user.id) }
+    let(:project) { create(:project, user: user) }
     let(:headers) { authorization_header_for(user) }
     let(:failed_project_id) { 0 }
 
@@ -113,7 +113,7 @@ RSpec.describe 'Projects', type: :request do
     end
 
     context 'when failed delete' do
-      let(:project_new) { create(:project, user_id: user.id) }
+      let(:project_new) { create(:project, user: user) }
 
       before { delete v1_project_path(failed_project_id), headers: headers, as: :json }
 

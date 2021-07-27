@@ -5,7 +5,7 @@ RSpec.describe 'Tasks', type: :request do
     include Docs::V1::Tasks::Create
 
     let(:user) { create(:user) }
-    let(:project) { create(:project, user_id: user.id) }
+    let(:project) { create(:project, user: user) }
     let(:headers) { authorization_header_for(user) }
 
     context 'when success' do
@@ -51,8 +51,8 @@ RSpec.describe 'Tasks', type: :request do
     include Docs::V1::Tasks::Update
 
     let(:user) { create(:user) }
-    let!(:project) { create(:project, user_id: user.id) }
-    let!(:task) { create(:task, project_id: project.id) }
+    let!(:project) { create(:project, user: user) }
+    let!(:task) { create(:task, project: project) }
     let(:headers) { authorization_header_for(user) }
 
     context 'when success' do
@@ -93,8 +93,8 @@ RSpec.describe 'Tasks', type: :request do
     include Docs::V1::Tasks::Destroy
 
     let(:user) { create(:user) }
-    let(:project) { create(:project, user_id: user.id) }
-    let(:task) { create(:task, project_id: project.id) }
+    let(:project) { create(:project, user: user) }
+    let(:task) { create(:task, project: project) }
     let(:headers) { authorization_header_for(user) }
 
     context 'when success destroy task' do
