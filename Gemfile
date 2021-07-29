@@ -7,6 +7,8 @@ gem 'acts_as_list', '~> 1.0', '>= 1.0.4'
 gem 'aws-sdk-s3', '~> 1.94', '>= 1.94.1'
 gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'factory_bot_rails', '~> 6.2'
+gem 'ffaker', '~> 2.18'
 gem 'jsonapi-serializer', '~> 2.2'
 gem 'jwt_sessions', '~> 2.6'
 gem 'pg', '~> 1.1'
@@ -18,8 +20,6 @@ gem 'redis', '~> 4.3', '>= 4.3.1'
 group :development, :test do
   gem 'bullet', '~> 6.1', '>= 6.1.4'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'factory_bot_rails', '~> 6.2'
-  gem 'ffaker', '~> 2.18'
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
   gem 'rspec_junit_formatter', '~> 0.4.1'
   gem 'rspec-rails', '~> 5.0', '>= 5.0.1'
